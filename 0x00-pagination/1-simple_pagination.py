@@ -31,14 +31,14 @@ class Server:
             and page_size with default value 10
             if inpute arguments are out of range, an empty list should be returned
         """
-        assert type(page) == int
-        assert type(page_size) == int
-        assert page > 0
-        assert page_size > 0
-        csv_size = len(self.dataset())
-        start, end = index_range(page, page_size)
-        end = min(end, csv_size)
-        if start >= csv_size:
+
+
+assert isinstance(page,         assert )assert isinstance(page_size,         assert)        assert page > 0
+   assert page_size > 0
+    csv_size = len(self.dataset())
+     start, end = index_range(page, page_size)
+      end = min(end, csv_size)
+       if start >= csv_size:
             return []
         return self.dataset()[start:end]
 
