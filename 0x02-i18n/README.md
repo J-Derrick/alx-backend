@@ -90,9 +90,10 @@ $ pybabel init -i messages.pot -d translations -l fr
 
 Then edit files ```translations/[en|fr]/LC_MESSAGES/messages.po``` to provide the correct value for each message ID for each language. Use the following translations:
 
-msgid	English	French
-```home_title```	```"Welcome to Holberton"```	```"Bienvenue chez Holberton"```
-```home_header```	```"Hello world!"```	```"Bonjour monde!"```
+| msgid | English | French |
+| ___ | ___| ___|
+| ```home_title``` | ```"Welcome to Holberton"``` | ```"Bienvenue chez Holberton"``` |
+| ```home_header``` | ```"Hello world!"``` |```"Bonjour monde!"``` |
 
 Then compile your dictionaries with
 
@@ -133,9 +134,10 @@ Define a ```before_request``` function and use the ```app.before_request``` deco
 
 In your HTML template, if a user is logged in, in a paragraph tag, display a welcome message otherwise display a default message as shown in the table below.
 
-msgid English French
-```logged_in_as```	```"You are logged in as %(username)s."```	```"Vous êtes connecté en tant que %(username)s."```
-```not_logged_in```	```"You are not logged in."```	```"Vous n'êtes pas connecté."```
+| msgid | English | French |
+| --- | ----- | ______ |
+| ```logged_in_as```	|```"You are logged in as %(username)s."``` | ```"Vous êtes connecté en tant que %(username)s."``` |
+|```not_logged_in``` | ```"You are not logged in."``` | ```"Vous n'êtes pas connecté."``` |
 
 *** Visiting ```http://127.0.0.1:5000/``` in your browser should display this: ***
 
